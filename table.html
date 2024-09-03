@@ -1,89 +1,20 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Table</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>formulaire</title>
+  </head>
+  <body>
+    <h1>Formulaire</h1>
+    <h3>Les inputs</h3>
 
-    <table 
-      style="
-        width: 100%;        
-        border-width: 1px;
-        border-style: solid;
-        border-color: aqua;
-        color: red;
-        ">
-
-         <tr>
-            <th>titre de la colonne1</th>
-            <th>titre de la colonne2</th>
-          </tr>
-
-          <tr>
-            <thead> 
-              <tr>
-                <td>thead1</td>
-                <td>thead2</td>
-              </tr>  
-            </thead>
-          </tr>
-
-      <tbody>
-
-        <tr style="background-color: blue;" >
-          <td>item1</td>
-          <td>item2</td>
-        </tr>
-        <tr>
-          <td bgcolor="red">item1</td>
-          <td>item2</td>
-        </tr>
-        <tr>
-          <td>item1</td>
-          <td>item2</td>
-        </tr>
-
-        <tr>
-          <td colspan="2">
-            <table 
-              style="
-              margin: 0 auto; 
-              width: 100%; 
-              background: grey;
-              border: 3px solid black;
-              color: black;
-              ">
-
-              <tr>
-                <th>A</th>
-                <th>B</th>
-                <th>C</th>
-                <th>D</th>
-              </tr>
-            
-              <tr>
-                <td>a</td>
-                <td>b</td>
-                <td>c</td>
-                <td>d</td>
-              </tr>
- 
-            </table>
-          </td>
-        </tr>
-      </tbody>    
-      
-          <tfoot>
-            <tr>
-              <td>001</td>
-            </tr>
-          </tfoot>
-        <caption style="text-align: left; color: rgb(88, 88, 10);">intitulé du tableau</caption>
-
-    </table>
-  
-</body>
+    <div class="wrapper">
+      <div class="container">
+        <form>
+          <input type="text" id="fname" name="fname" />
+        </form>
+      </div>
+    </div>
+  </body>
 </html>
