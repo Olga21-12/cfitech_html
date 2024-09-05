@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Groupe les input localisation</title>
+</head>
+<body>
+
+    <form id="form">
+
+            <fieldset>
+
+                <legend>Groupe les input localisation</legend>
+                <div>
+                    <p>
+                    <label for="city">Ville :</label>
+                    <input 
+                    type="text" 
+                    name="city" 
+                    value=""
+                    placeholder="veuillez écrire le nom d'une ville"/>
+                    </p>
+                    <p>    
+                    <label for="cp">Code Postal :</label>
+                    <input 
+                    type="text" 
+                    name="cp" 
+                    value=""
+                    placeholder="veuillez écrire le code postal"/>
+                    </p>
+                </div>
+
+            </fieldset>    
+            <fieldset>
+                <legend>Groupe les input sous le même terme</legend>
+                <div>
+                    <p>
+                    <label for="nom">Écrivez votre nom :</label>
+                    <input 
+                    type="text" 
+                    name="nom" 
+                    value=""
+                    placeholder="entrez votre nom"/>
+                    </p>
+                    <p>
+                    <label for="prénom">Écrivez votre prénom :</label>
+                    <input 
+                    type="text" 
+                    name="prénom" 
+                    value=""
+                    placeholder="entrez votre prénom"/>
+                    </p>
+                    <p>
+                    <label for="email">Écrivez votre email :</label>
+                    <input 
+                    type="email" 
+                    name="email" 
+                    value=""
+                    placeholder="entrez votre email"/>
+                    </p>
+                    <p>
+                    <label for="password">Entrez votre mot de passe :</label>
+                    <input 
+                    type="password" 
+                    name="password" 
+                    value=""
+                    placeholder="entrez votre mot de passe"/>
+                    </p>
+                </div>
+            </fieldset>
+            <hr />
+
+                <fieldset>
+                    <legend>Santé et genre</legend>
+            <div>
+	            <label for="sante">Comment vous sentez-vous ?</label> <br>
+	                <p>
+                    <input type="radio" name="how_do_you_feel" value="very_good">   Trés Bien 
+	                <input type="radio" name="how_do_you_feel" value="good">    Bien	
+                    <input type="radio" name="how_do_you_feel" value="soso">    Comme si comme ça 
+                    <input type="radio" name="how_do_you_feel" value="mal"> Mal 
+	                <input type="radio" name="how_do_you_feel" value="fair">    Bof 
+                    </p>    
+            </div>
+           <p>---------------------------------------------------------------------------------------------------</p>
+            <div>
+	            <label for="sexe">Choisissez votre sexe</label> <br>
+	            <p>
+                    <label for="male">Male<input type="radio" name="votre_sexe" value="male"></label>
+	                <label for="femal">Femal<input type="radio" name="votre_sexe" value="female"></label>	
+                    <label for="binare">Non binare<input type="radio" name="votre_sexe" value="non_binare"></label>
+                </p>    
+            </div>
+                </fieldset>
+            <hr />
+
+                <fieldset>
+                    <legend>Préféré</legend>
+            <div> 
+                <label for="musique">Votre style de musique ?</label> <br>
+                <p>
+                    <input type="checkbox" name="music[]" value="pop">  Popular <br>
+                    <input type="checkbox" name="music[]" value="rock_n_roll">  Rock 'n Roll <br>
+                    <input type="checkbox" name="music[]" value="rb">   Rythm &amp; Blues <br>
+                    <input type="checkbox" name="music[]" value="rock"> Rock <br>
+                    <input type="checkbox" name="music[]" value="classique">    Classique <br>
+                    <input type="checkbox" name="music[]" value="métal">    Métal <br>
+                    <input type="checkbox" name="music[]" value="musique_l'âme">    Musique pour l'âme <br>
+                </p>   
+            </div>
+                <p>--------------------------------------------------------------------------------------------------</p>
+
+            <div>
+                <label for="sandwich">Quels sont vos préférenes en matiére de sandwich ?</label> <br>
+                <p>
+                    <input type="checkbox" name="sandwich[]" value="poulet_curry">  poulet curry <br>
+                    <input type="checkbox" name="sandwich[]" value="poulet_salade"> poulet salade <br>
+                    <input type="checkbox" name="sandwich[]" value="thon_piquant">  thon piquant <br>
+                    <input type="checkbox" name="sandwich[]" value="jambon_fromage">    jambon et fromage <br>
+                    <input type="checkbox" name="sandwich[]" value="saumon_salade"> saumon avec salade <br>
+                    <input type="checkbox" name="sandwich[]" value="végétarien">    végétarien <br>
+                </p>
+            </div>
+
+            <p>------------------------------------------------------</p>
+
+            <label for="nombre">Mon nombre fétiche (de 0 à 1000) :</label> <br>
+                        <p></p>
+                        0<input 
+                            type="range" 
+                            name="nombre" 
+                            id="nombre"
+                            value="900"
+                            min="0"
+                            max="1000" />
+                        1000
+                </fieldset>
+            <hr />
+
+                <fieldset>
+                    <legend>Couleur préférée</legend>
+                <div  >
+	                <label for="voiture">Choisissez la couleur de votre voiture. </label>
+                                <br>
+                            <select name="voiture">
+                            <option value=""></option>
+                            <option value="white" selected>Blanc</option>
+                            <option value="blue">Blue</option>
+                            <option value="red">Rouge</option>
+                            <option value="rose">Rose</option>
+                            <option value="black">Noir</option>
+                            </select>
+                </div>    
+                <hr />
+
+                <div>
+                    <label for="my_favorite_color">Ma couleur préféré : <input type="color" name="my_favorite_color" required /></label>
+                </div>
+                   
+	            </fieldset>                    
+                
+                    <hr />
+
+                <fieldset>
+                     <legend>Buttons</legend>   
+                        <label for="submit"><input type="submit" value="submit">Submit</label> <br>
+                        <label for="button"><input type="button" value="button">Button</label> <br>
+                        <p></p>
+                        <button type="submit">button type "submit"</button> <br><!-- Кнопка с утолщённым текстом — динамично и заметно, лучше для CSS" -->
+                        <input type="submit" name="submit" id="submit" /> <br> <!-- Простая кнопка отправки без излишеств -->
+                        <!-- le button est fait pour l'action, print, add to cart-->
+                        <button type="button">button type "button"</button> <br>
+                        <input type="submit" value="ENVOYER" /><br>
+                        <label>Rien ne se passe. Il manque le code de validation Javascript.</label><br />
+                        
+                <hr />
+                      
+                <a href="#form">back to top ↑</a>
+
+                </fieldset>    
+
+                    <h3>Les Dates</h3>
+
+                    <label for="start">Start date:
+                        <input 
+                            type="date" 
+                            id="start" 
+                            name="trip-start" 
+                            value="2024-09-05" 
+                            min="1900-01-01" 
+                            max="2999-12-31" />
+                    </label>
+
+                    <label for="start">Start end:
+                        <input 
+                            type="date" 
+                            id="end" 
+                            name="trip-end" 
+                            value="2024-09-06" 
+                            min="1900-01-01" 
+                            max="2999-12-31" />
+                    </label>
+
+                    <label for="time">Time</label>
+                        <input 
+                            type="time" 
+                            name="clock" 
+                            id="time"
+                            value="12:00"
+                            min="00:00"
+                            max="24:00" >
+
+            <h3>Date Time Local</h3>
+                
+                <label for="meeting-time">Choose a time for your appointment:
+                        <input
+                            type="datetime-local"
+                            id="meeting-time"
+                            name="meeting-time"
+                            value="2024-09-08T09:30"
+                            min="2024-09-01T00:00"
+                            max="2024-09-14T00:00" />
+                </label>
+
+            <h3>Telephone</h3>
+                <label for="phone">Enter your phone number:<br />
+                    <small>Format: 123-456-7890</small>
+                    </label>
+                    <input 
+                        type="tel" 
+                        id="phone" 
+                        name="phone" 
+                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" 
+                        required />
+
+                        <p></p>
+
+                       <h3>Message</h3>
+                       <label for="message">Message:
+                            <textarea 
+                            name="message" 
+                            id="message"
+                            placeholder="Commentaire"
+                            maxlength="100">
+                        </textarea>
+                       </label>
+
+                    </form>
+
+                    <hr />
+
+                    <h2>Exemple de relation entre cible de lien (target) et iframe</h2>
+                        <a href="https://maps.app.goo.gl/HVTKgtBLLswveU4P8" target="widget">ce lien</a>
+                        <a href="https://www.awwwards.com" target="widget">ce lien</a>
+                        <a href="https://www.liberation.fr" target="widget">ce lien</a>
+               <hr />
+
+                            <iframe
+                            src="./form.html"
+                            width="600"
+                            height="250"
+                            style="border: 0"
+                            allowfullscreen=""
+                            loading="lazy"
+                            name="widget"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            ></iframe>
+    
+</body>
+</html>
