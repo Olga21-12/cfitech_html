@@ -1,7 +1,5 @@
 /* style du site */
 
-p {color: rgb(78, 78, 147);}
-
 /* *{
     border: 1px solid grey;    
 }*/
@@ -16,19 +14,18 @@ p {color: rgb(78, 78, 147);}
 }
 
 body {
-    background-color: rgb(172, 169, 169);
+    background-color: rgb(218, 209, 209);
 }
 
-.content {
-    color: green;
+@layer colors {
+    .content {
+    color: rgb(13, 56, 13);
 }
 
 .liht {
     color: red;
     font-weight: bold;
 }
-
-@layer colors {}
 
 @layer images {
     img {
