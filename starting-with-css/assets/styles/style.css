@@ -1,0 +1,61 @@
+/* style du site */
+
+p {color: rgb(78, 78, 147);}
+
+/* *{
+    border: 1px solid grey;    
+}*/
+
+@layer base {
+    .container {
+        width: 600px;
+        margin: auto;
+        background-color: white;
+        /* border: 1px solid aqua */        
+    }
+}
+
+body {
+    background-color: rgb(172, 169, 169);
+}
+
+.content {
+    color: green;
+}
+
+.liht {
+    color: red;
+    font-weight: bold;
+}
+
+@layer colors {}
+
+@layer images {
+    img {
+       width: 50%;
+       background-color: bisque;
+    }
+    .div_imag {
+    display: grid;
+    place-items: center;
+}
+    }
+
+@layer fonts {
+        font-family: sans-serif;
+    }
+
+@layer navigation {
+    .nav{
+        border: 1px solid aqua;
+    }
+    .nav li {
+        color: rgb(58, 50, 39);    
+    }
+    .nav li a{
+        color: yellowgreen;
+    }
+}
+
+@layer base, colors, fonts, images, navigation;
+
