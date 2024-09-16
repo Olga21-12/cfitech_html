@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .button {
+        padding: 15px 32px;
+        border-width: 2px;
+        border-style: solid;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        margin: 4px 2px;
+        cursor: pointer;
+        box-shadow: 5px 10px 8px black;
+        &:hover {
+        border-color: yellowgreen;
+        color: #0fc74d;
+        background-color: azure;
+        }
+      }
+
+      .button1 {
+        font-size: 10px;
+        background-color: #4942d4;
+        border-color: #191660;
+        border-radius: 15%;
+        color: red;
+      }
+
+      .button2 {
+        font-size: 12px;
+        background-color: #0fc74d;
+        border-color: #066d29;
+        border-radius: 25%;
+        color: yellow;
+      }
+
+      .button3 {
+        font-size: 16px;
+        background-color: #72117b;
+        border-color: #3a063f;
+        border-radius: 35%;
+        color: #0468aa;
+      }
+
+      .button4 {
+        font-size: 20px;
+        background-color: #0468aa;
+        border-color: #02253b;
+        border-radius: 45%;
+        color: whitesmoke;
+      }
+
+      .button5 {
+        font-size: 24px;
+        background-color: #84265b;
+        border-color: #3e0b28;
+        border-radius: 55%;
+        color: bisque;
+       }
+
+      .button6 {
+        font-size: 10px;
+        background-color: transparent;
+        color: #191660;
+        border-color: #191660;
+        border-radius: 15%;
+      }
+
+      .button7 {
+        font-size: 12px;
+        background-color: transparent;
+        color: #066d29;
+        border-color: #066d29;
+        border-radius: 25%;
+      }
+
+      .button8 {
+        font-size: 16px;
+        background-color: transparent;
+        color: #3a063f;
+        border-color: #3a063f;
+        border-radius: 35%;
+      }
+
+      .button9 {
+        font-size: 20px;
+        background-color: transparent;
+        color: #02253b;
+        border-color: #02253b;
+        border-radius: 45%;
+      }
+
+      .button10 {
+        font-size: 24px;
+        background-color: transparent;
+        color: #3e0b28;
+        border-color: #3e0b28;
+        border-radius: 55%;
+        &:hover {
+        border-color: red;
+        color: rgb(123, 1, 1);
+        background-color: #3e0b28;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Button Sizes</h2>
+
+    <p>
+      1. Modifiez la taille de la police d'un bouton à l'aide de la propriété
+      font-size <br />
+      2. Modifiez la couleur de fond de chaque bouttons <br />
+      3. Modifiez le border et border-radius de chaque boutton afin de faire des
+      buttons arrondi. <br />
+      4. Dupliquer le .container et ses enfants, et faire des bouttons avec un
+      fond blanc et des bordure de couleurs. <br />
+      5. Faites un état hover de chaque boutton
+    </p>
+
+    <div class="container">
+      <button class="button button1">10px</button>
+      <button class="button button2">12px</button>
+      <button class="button button3">16px</button>
+      <button class="button button4">20px</button>
+      <button class="button button5">24px</button>
+    </div>
+
+    <div class="container"></div>
+      <button class="button button6">10px</button>
+      <button class="button button7">12px</button>
+      <button class="button button8">16px</button>
+      <button class="button button9">20px</button>
+      <button class="button button10">24px</button>
+    </div>
+  </body>
+</html>

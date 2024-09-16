@@ -1,36 +1,58 @@
 /* style du site */
 
-/* *{
-    border: 1px solid grey;    
-}*/
+/* {border: 1px solid grey;}*/
 
-@layer base {
+@layer base{
     .container {
-        width: 600px;
+        width: 80%;
         margin: auto;
         background-color: white;
         /* border: 1px solid aqua */        
     }
+    :root{
+        --color-primary: peru;
+        --color-secondary: skyblue;
+        --bgcolor-primary: rgb(228, 211, 211);
+        --image-w: 300px;
+        --font-size: 20rem;
+        --container-size-xs: 360px;
+
+    }
+    body {
+    background-color: var( --bgcolor-primary );
+    }
+    .header{
+        & .container{
+        }
+        & .h1{}
+        & .h1 span{}
+    }
 }
 
-body {
-    background-color: rgb(218, 209, 209);
-}
-
-@layer colors {
+@layer colors{
     .content {
     color: rgb(13, 56, 13);
-}
-
+    column-width: 50%; /*ширина колонок*/
+	column-count: 2; /*количество колонок*/
+	column-gap: 10%; /*расстояние между колонками*/
+	background: #fff2e1; /*заливка фона*/
+    }
 .liht {
     color: red;
     font-weight: bold;
+    }
+    .content1{
+        color: rgb(111, 111, 17);
+    }
 }
 
-@layer images {
+@layer images{
     img {
        width: 50%;
        background-color: bisque;
+       height: auto;
+       min-width: 150px;
+       max-width: 500px;
     }
     .div_imag {
     display: grid;
@@ -38,11 +60,17 @@ body {
 }
     }
 
-@layer fonts {
-        font-family: sans-serif;
+@layer fonts{
+    h1, .h1,
+    h2, .h2,
+    h3, .h3{
+        color: var( --color-primary);        
+        text-align: center;
+        } 
+        font-family: "Helvetica", Arial, sane-serif;
     }
 
-@layer navigation {
+@layer navigation{
     .nav{
         border: 1px solid aqua;
     }
@@ -52,7 +80,39 @@ body {
     .nav li a{
         color: yellowgreen;
     }
+    .nav li a:hover{
+            background-color: violet;
+        }
+    .menu{
+        position: fixed;
+        top: 0;
+    }
+    .menu .container{}
+    ul.nav2{
+        list-style: none;
+        display: inline;
+        & li {
+            display: inline;
+            padding: 0 16px;
+            background-color: rgb(169, 47, 47)
+        }
+        & li a {
+            text-decoration: none;  
+            color: whitesmoke; 
+        }
+    }
+         .nav2 li a:hover{
+            background-color: violet;
+        }
+        .nav2 li a:active{
+            background-color: yellowgreen
+        }
 }
 
-@layer base, colors, fonts, images, navigation;
+@layer button{
+    .button {
+    }
+}
+
+@layer base, colors, fonts, images, navigation, button;
 
