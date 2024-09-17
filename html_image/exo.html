@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image, picture, figure</title>
+    <style>
+        .h{color: rgb(228, 123, 18);
+        text-align: center;
+        text-shadow: 4px 4px 2px rgb(161, 222, 83);
+        }
+        img,
+        source{
+            width: 100%;
+            height: auto;
+        }
+    </style>
+  </head>
+  <body>
+
+    <h1 class="h">Image, picture, figure</h1>
+
+    <div class="wrapper">
+        <div class="conteiner">
+            <h2 class="h">Image</h2>
+
+            <section>
+                <img src="./image/pizza.jpg" alt="image d'une pizza" width="50%">
+            </section>
+
+            <section>
+                <h2 class="h">Picture, D.A - direction artistique</h2>
+                <picture>
+                    <source media="(min-width: 650px)" srcset="./image/pexels-pixabay-262978.jpg">
+                    <source media="(min-width: 465px)" srcset="./image/pexels-valeriya-kobzar-42371713-8630151.jpg">
+                    <img src="./image/pizza.jpg" style="width:auto;">   
+                </picture>    
+            </section>
+                    
+            <section>
+                <figure>
+                    <h2 class="h">Figure, img, chart, camenbert, grafhique</h2>
+                    <img src="./image/pexels-valeriya-kobzar-42371713-8630151.jpg" alt="photo">
+                    
+                    <figcaption>je suis une légende</figcaption>
+                    
+                </figure>
+
+            </section>
+
+          
+ 
+
+        </div>
+    </div>
+
+  </body>
+</html>
